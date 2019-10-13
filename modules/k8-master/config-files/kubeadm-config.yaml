@@ -1,0 +1,12 @@
+apiVersion: kubeadm.k8s.io/v1beta2
+kind: ClusterConfiguration
+kubernetesVersion: stable
+networking:
+  podSubnet: 192.168.0.0/24
+etcd:
+  external:
+    endpoints:
+    - https://etcd1.k8.local:2379
+    caFile: /home/k8/ca.crt
+    certFile: /home/k8/apiserver-etcd-client.crt
+    keyFile: /home/k8/apiserver-etcd-client.key
