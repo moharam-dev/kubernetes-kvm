@@ -58,7 +58,7 @@ The name of the bridge is important. If you create a bridge with a different nam
 git clone https://github.com/moharam-dev/kubernetes-kvm.git
 ```
 
-3) Run the installation script (please type in the )
+3) Run the installation script 
 ```
 sudo chmod +x setup.sh 
 sudo ./setup.sh <<non-root user name>>
